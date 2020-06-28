@@ -1,0 +1,115 @@
+
+body {
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #011627;
+
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2EC4B6;
+}
+
+h2 {
+  font-size: 2.00em;
+  font-weight: 700;
+  color: #2EC4B6;
+}
+
+h3 {
+  font-size: 1.50em;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+/* Hyperlinks and hover state */
+
+a {
+  color: #E71D36;
+  text-decoration: none; /* No underlining */
+
+}
+
+a:visited {
+  color: #941222; /* visited link color carmine */
+}
+
+a:hover, a:focus {
+  color: #cc6540; /* orange */
+  text-decoration: underline; /* Underlining when hovering over a link */
+
+}
+
+a:active {
+  color: #E71D36; /* selected link */
+}
+
+/* Button and hover state */
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #2EC4B6;
+  color: #ffffff; /* needed to override the default link color */
+  text-transform: uppercase;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #18655E; /* width of the border, type, color */
+  transition: 0.2s opacity;
+  }
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.button:active {
+  opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact{
+  background-color: transparent;
+  color: #2EC4B6;
+  text-transform: uppercase;
+  border: 2px solid #2EC4B6;
+}
+
+.button.contact:hover{
+  background-color: #2EC4B6;
+  color: #ffffff;
+}
+
+.button.contact:active {
+  opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+
+
+/*
+Colors used:
+Primary Color (Brigth Cyan): #2EC4B6;
+Secondary Color (Alizarin - pink-red): #E71D36;
+Background Color (Panache - light green): #EFFFE9
+Font Color (Black Pearl): #011627
+*/
+
+/*
+Fonts used: Montserrat
+font-family: 'Montserrat', sans-serif;
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
+ */

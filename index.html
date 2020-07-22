@@ -12,8 +12,8 @@
   <body>
 
     <header>
-      <div>
-      <img src="https://via.placeholder.com/150x50?text=PHUONG NGUYEN" alt="My name">
+      <div class="container">
+      <img src="img/logo/logo@2x.png" alt="Logo Phuong Nguyen" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
@@ -25,65 +25,63 @@
     </header>
 
     <main>
-      <div><!--Hero section-->
-        <div>
-          <h1><span></span></h1>
-          <p></p>
+      <div id="hero"><!--hero section-->
+        <div class="container">
+          <h1 class="center"><span>Hi, I’m Phuong. I'm an UX designer based in Berlin.</span></h1>
+          <p class="center">I have a mixed cultural background and multidisciplinary professional experiences.</p>
         </div>
       </div>
 
-      <div> <!--Work section-->
-        <div>
+  <div id="work"> <!-- work section -->
+    <div class="container">
+        <h2>My work</h2>
 
-          <h1>My work</h1>
+        <!-- FIRST PROJECT -->
+        <div class="row"><!-- open row that holds (2) columns for project -->
 
-          <!-- FIRST PROJECT -->
-          <div><!-- open row that holds (2) columns for project -->
-            <div><!-- open first column (used for image) -->
-              <picture style="max-width:100%">
-                  <!-- <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
-                  <img src="http://via.placeholder.com/1200x800" alt="My Image">-->
-                  <source srcset="img/fluency/HF Screens_1@1x.png" media="(max-width:767px)">
-                  <img src="img/fluency/HF Screens_1@2x.png" alt="Fluency Expert App Mockup" style="max-width:100%">
+          <div><!-- open first column (used for image) -->
+            <picture style="max-width:100%">
+                <!-- <source srcset="http://via.placeholder.com/600x400" media="(max-width:767px)">
+                <img src="http://via.placeholder.com/1200x800" alt="My Image">-->
+                <source srcset="img/fluency/HF Screens_1@1x.png" media="(max-width:767px)">
+                <img src="img/fluency/HF Screens_1@2x.png" alt="Fluency Expert App Mockup" style="max-width:100%" class="image">
+            </picture>
+          </div><!-- end first column -->
 
-              </picture>
-            </div><!-- end first column -->
+          <div class="center"><!-- open second column (used for text) -->
+            <h2>Fluency</h2><!-- heading for the project -->
+            <p><!-- open paragraph (for project blurb) -->
+            FLUENCY is a mobile web app that helps language learners get language support from experts like native speakers, tutors and proofreaders.
+            </p><!-- end paragraph -->
 
-            <div><!-- open second column (used for text) -->
-              <h2>FLUENCY</h2><!-- heading for the project -->
-              <p><!-- open paragraph (for project blurb) -->
-              FLUENCY is a mobile web app that helps language learners get language support from experts like native speakers, tutors and proofreaders.
-              </p><!-- end paragraph -->
+            <p><!-- open paragraph (for skills) -->
+            Skills, Tools: UX Research & Design, Prototyping, Visual Design, Usability Testing
+            </p><!-- end paragraph -->
+            <a href="fluency.html" class="button">Read more</a>
+          </div><!-- end second column (used for text) -->
 
-              <p><!-- open paragraph (for skills) -->
-              Skills, Tools: UX Research & Design, Prototyping, Visual Design, Usability Testing
-              </p><!-- end paragraph -->
+        </div><!-- end row that holds (2) columns for project -->
 
-              <a href="fluency.html" class="button">Read more</a>
-            </div><!-- end second column (used for text) -->
-          </div><!-- end row that holds (2) columns for project -->
-        </div>
       </div>
+  </div>
+
     </main>
 
 
     <!--footer with contact information-->
     <footer id="contact">
-      <div><!--contact information-->
+      <div class="container"><!--contact information-->
         <h2>Get in touch</h2>
-        <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-        <p>Call: <a href="+49 1234567">+49 1234567</a>. Or prefer sending an email?</p>
-          <div>
+        <p>Do you like my work and want to discuss opportunities? Please get in touch.
+        <p>Call: <a href="+49 1234567">+49 1234567</a>. Or prefer sending an email?</p></p>
+        <div class="mail">
             <a href="mailto:phuong.nguyen.her@gmail.com" class="button contact">Email me</a>
-          </div>
-
-        <div><!--social media-->
+        </div>
+        <div id="social"><!--social media-->
           <a href="https://www.linkedin.com/in/phuong-nguyen-23300878" target="_blank">
           <!--<img src="https://via.placeholder.com/80" alt="LinkedIn">-->
           <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="flat" stroke="none" stroke-width="1"><g id="linkedin"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#346DA6" id="Linkedin"/><path d="M21.8830754,43.8231512 L21.8830754,25.5243389 L16.22737,25.5243389 L16.22737,43.8231512 L21.8830754,43.8231512 Z M21.8830754,19.0382145 C21.8493882,17.40066 20.7580156,16.1538462 18.9850543,16.1538462 C17.2116316,16.1538462 16.0528846,17.40066 16.0528846,19.0382145 C16.0528846,20.6402023 17.1779444,21.9230769 18.9172185,21.9230769 L18.9509057,21.9230769 C20.7580156,21.9230769 21.8830754,20.6402023 21.8830754,19.0382145 Z M31.1100418,43.8231517 L31.1100418,33.3973729 C31.1100418,32.8394014 31.1503704,32.28143 31.3144472,31.8836682 C31.7630341,30.7682778 32.7839561,29.6136637 34.498199,29.6136637 C36.7438958,29.6136637 38.152278,30.8881587 38.152278,33.3973727 L38.152278,43.8231516 L43.8461538,43.8231517 L43.8461538,33.1183872 C43.8461538,27.3839878 40.7850453,24.715669 36.7019099,24.715669 C33.3540813,24.715669 31.8845724,26.5873593 31.0686083,27.861302 L31.1094893,25.4139123 L25.425462,25.4139123 C25.5072241,27.1657215 25.425462,43.8231516 25.425462,43.8231516 L31.1100418,43.8231517 Z" fill="#FFFFFF"/></g></g></svg>
           </a>
-
-
         </div>
         <p>Copyright Phuong Nguyen 2020</p>
       </div>

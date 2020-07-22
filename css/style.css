@@ -1,3 +1,16 @@
+header {
+  background-color: #cbf3f0; /*Light grayish cyan */
+  text-align: center;
+  padding: 10px 0;  /* Adds a 10px inner spacing to all sides */
+  margin: 0px;
+  position: fixed;
+  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
 
 body {
   background-color: white;
@@ -13,10 +26,10 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #2EC4B6;
+  text-transform: none;
+  color: #011627;
 }
 
 h2 {
@@ -38,23 +51,23 @@ h4 {
 /* Hyperlinks and hover state */
 
 a {
-  color: #E71D36;
+  color: #E71D36; /* red */
   text-decoration: none; /* No underlining */
 
 }
 
 a:visited {
-  color: #941222; /* visited link color carmine */
+  color:#800080 ; /* purple */
 }
 
 a:hover, a:focus {
-  color: #cc6540; /* orange */
+  color: #FFA500; /* orange */
   text-decoration: underline; /* Underlining when hovering over a link */
 
 }
 
 a:active {
-  color: #E71D36; /* selected link */
+  color: #E71D36; /* red */
 }
 
 /* Button and hover state */
@@ -98,7 +111,8 @@ a:active {
   text-decoration: none;
 }
 
-
+.image { width: 400px; }
+.image.big { width: 800px; }
 
 /*
 Colors used:
@@ -113,3 +127,111 @@ Fonts used: Montserrat
 font-family: 'Montserrat', sans-serif;
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
  */
+
+
+/* Layout styling */
+
+.container {
+  padding: 0 15px; /*Adds 0px to top & bottom and 15px to left and right */
+}
+
+.row {
+  margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+#work .row {padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
+
+
+.center {
+  text-align: center;
+}
+
+.logo {max-width: 250px;}
+
+nav {display: inline-block; width:100%
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #E71D36; /* red */
+}
+
+nav > ul > li > a:visited {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #800080; /* purple */
+}
+
+
+nav > ul > li > a:hover, a:focus {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #FFA500; /* orange */
+}
+
+#hero {
+  background-color: #cbf3f0;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+main {
+  padding-top: 100px;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+#work {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#intro {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#story {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#contact {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+#social {
+  margin: 16px 0
+}
+
+
+#mail {
+  margin: 16px 0
+}
+
+#project {
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}

@@ -12,12 +12,12 @@
   <body>
 
     <header>
-      <div>
-      <img src="https://via.placeholder.com/150x50?text=PHUONG NGUYEN" alt="My name">
+      <div class="container">
+      <img src="img/logo/logo@2x.png" alt="Logo Phuong Nguyen" class="logo">
       <nav>
         <ul>
           <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html"target="_self">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -25,27 +25,26 @@
     </header>
 
 <main>
-<div> <!-- page heading-->
+<div class="container" id="project"> <!-- page heading-->
     <div> <!--open two rows for text and pictures-->
       <div><!-- open first column with text-->
-        <h1>Fluency</h1>
-        <p>A mobile web app project as part of CareerFoundry’s UX Design course.</p>
-        <p>It allows language learner to deepen their language skills by combining social interactions with professional help from experts.</p>
+        <h2>Fluency</h2>
+        <p>A mobile web app project as part of CareerFoundry’s UX Design course. It allows language learner to deepen their language skills by combining social interactions with professional help from experts.</p>
       </div><!-- end first column with text-->
 
       <div><!-- open 2nd column with pictures-->
         <picture style="max-width:100%">
           <source srcset="img/fluency/HF Screens_1@1x.png" media="(max-width:767px)">
-          <img src="img/fluency/HF Screens_1@2x.png" alt="fluency mock up" style="max-width:100%">
+          <img src="img/fluency/HF Screens_1@2x.png" alt="fluency mock up" style="max-width:100%" class="image">
           <source srcset="img/fluency/HF Screens_2@1x.png" media="(max-width:767px)">
-          <img src="img/fluency/HF Screens_2@2x.png" alt="fluency mock up"style="max-width:100%">
+          <img src="img/fluency/HF Screens_2@2x.png" alt="fluency mock up"style="max-width:100%" class="image">
         </picture>
       </div><!-- end second column with pictures-->
     </div><!--end two rows for text and pictures-->
 </div> <!-- end page heading-->
 
 
-<div> <!--container project description-->
+<div class="container" id="project"> <!--container project description-->
   <div>
     <h2>Purpose</h2>
       <p>Design a mobile web app that encourages language learners to keep on improving their new skills. Further the app offers them superior support from language experts that suits their current needs.
@@ -53,7 +52,7 @@
   </div>
 </div>
 
-  <div><!--open 3 column for skills and tools-->
+  <div class="container" id="project"><!--open 3 column for skills and tools-->
     <div>
       <h3>My Role</h3>
       <p>UX Design</p>
@@ -66,6 +65,7 @@
         <li>Usability Testing</li>
       </ul>
     </div>
+
     <div>
       <h3>My Tools</h3>
       <ul>
@@ -76,7 +76,7 @@
     </div>
   </div><!--open rows for skills and tools-->
 
-  <div><!--container process-->
+  <div class="container" id="project"><!--container process-->
     <div><!--open 2 columns with text and images-->
       <div><!--1st column-->
         <h2>Overall Design Process</h2>
@@ -96,7 +96,7 @@
       </div><!--end 2 columns with text and images-->
   </div><!--end container process-->
 
-  <div><!--container details-->
+  <div class="container" id="project"><!--container details-->
 
         <div> <!--open 1st block -->
           <h3>Empathise</h3>
@@ -109,7 +109,7 @@
               <div><!--2nd column with img-->
                 <picture style="max-width:100%">
                   <source srcset="img/fluency/User personas@1x.jpg" media="(max-width:767px)">
-                  <img src="img/fluency/User personas@2x.jpg" alt="user personas" style="max-width:100%">
+                  <img src="img/fluency/User personas@2x.jpg" alt="user personas" style="max-width:100%" class="image big">
                 </picture>
               </div>
           </div><!--end 2 columns -->
@@ -131,7 +131,7 @@
             <div><!--open 2nd column -->
               <picture style="max-width:100%">
                 <source srcset="img/fluency/LF Sketch_@1x.png" media="(max-width:767px)">
-                <img src="img/fluency/LF Sketch_@2x.png" alt="low-fidelity screens" style="max-width:100%">
+                <img src="img/fluency/LF Sketch_@2x.png" alt="low-fidelity screens" style="max-width:100%" class="image big">
               </picture>
             </div><!--end 2nd column -->
           </div><!--end columns -->
@@ -164,11 +164,11 @@
               <div><!--2nd column with img-->
                 <picture style="max-width:100%">
                   <source srcset="img/fluency/tutor overview@1x.png" media="(max-width:767px)">
-                  <img src="img/fluency/tutor overview@2x.png" alt="tutor overview changes" style="max-width:100%">
+                  <img src="img/fluency/tutor overview@2x.png" alt="tutor overview changes" style="max-width:100%" class="image big">
                 </picture>
                 <picture style="max-width:100%">
                   <source srcset="img/fluency/tutor profile@1x.png" media="(max-width:767px)">
-                  <img src="img/fluency/tutor profile@2x.png" alt="tutor profile changes" style="max-width:100%">
+                  <img src="img/fluency/tutor profile@2x.png" alt="tutor profile changes" style="max-width:100%" class="image big">
                 </picture>
               </div><!--end 2nd column-->
           </div><!--end 2 rows -->
@@ -186,21 +186,18 @@
 
 <!--footer with contact information-->
 <footer id="contact">
-  <div><!--contact information-->
-    <h2>Get in Touch</h2>
-    <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
-    <p>Call: <a href="+49 1234567">+49 1234567</a>. Or prefer sending an email?</p>
-      <div>
+  <div class="container"><!--contact information-->
+    <h2>Get in touch</h2>
+    <p>Do you like my work and want to discuss opportunities? Please get in touch.
+    <p>Call: <a href="+49 1234567">+49 1234567</a>. Or prefer sending an email?</p></p>
+    <div class="mail">
         <a href="mailto:phuong.nguyen.her@gmail.com" class="button contact">Email me</a>
-      </div>
-
-    <div><!--social media-->
+    </div>
+    <div id="social"><!--social media-->
       <a href="https://www.linkedin.com/in/phuong-nguyen-23300878" target="_blank">
       <!--<img src="https://via.placeholder.com/80" alt="LinkedIn">-->
       <svg height="60px" version="1.1" viewBox="0 0 60 60" width="60px" xmlns="http://www.w3.org/2000/svg" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns" xmlns:xlink="http://www.w3.org/1999/xlink"><title/><defs/><g fill="none" fill-rule="evenodd" id="flat" stroke="none" stroke-width="1"><g id="linkedin"><path d="M30,60 C46.5685433,60 60,46.5685433 60,30 C60,13.4314567 46.5685433,0 30,0 C13.4314567,0 0,13.4314567 0,30 C0,46.5685433 13.4314567,60 30,60 Z" fill="#346DA6" id="Linkedin"/><path d="M21.8830754,43.8231512 L21.8830754,25.5243389 L16.22737,25.5243389 L16.22737,43.8231512 L21.8830754,43.8231512 Z M21.8830754,19.0382145 C21.8493882,17.40066 20.7580156,16.1538462 18.9850543,16.1538462 C17.2116316,16.1538462 16.0528846,17.40066 16.0528846,19.0382145 C16.0528846,20.6402023 17.1779444,21.9230769 18.9172185,21.9230769 L18.9509057,21.9230769 C20.7580156,21.9230769 21.8830754,20.6402023 21.8830754,19.0382145 Z M31.1100418,43.8231517 L31.1100418,33.3973729 C31.1100418,32.8394014 31.1503704,32.28143 31.3144472,31.8836682 C31.7630341,30.7682778 32.7839561,29.6136637 34.498199,29.6136637 C36.7438958,29.6136637 38.152278,30.8881587 38.152278,33.3973727 L38.152278,43.8231516 L43.8461538,43.8231517 L43.8461538,33.1183872 C43.8461538,27.3839878 40.7850453,24.715669 36.7019099,24.715669 C33.3540813,24.715669 31.8845724,26.5873593 31.0686083,27.861302 L31.1094893,25.4139123 L25.425462,25.4139123 C25.5072241,27.1657215 25.425462,43.8231516 25.425462,43.8231516 L31.1100418,43.8231517 Z" fill="#FFFFFF"/></g></g></svg>
       </a>
-
-
     </div>
     <p>Copyright Phuong Nguyen 2020</p>
   </div>

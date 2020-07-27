@@ -80,11 +80,11 @@ a:active {
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid #18655E; /* width of the border, type, color */
-  transition: 0.2s opacity;
+  transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
   }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.6; /* Reduces the opacity of the button to 80% */
   color: #ffffff;
   text-decoration: none;
 }
@@ -139,11 +139,21 @@ font-family: 'Montserrat', sans-serif;
   margin: 25px 0; /* 25px top and bottom, 0 left and right */
 }
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #work .row {padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
 
 
 .center {
   text-align: center;
+}
+
+.left {
+  text-align: left;
 }
 
 .logo {
@@ -192,7 +202,7 @@ nav > ul > li > a:hover, a:focus {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 99px;
 }
 
 ul {
@@ -200,19 +210,25 @@ ul {
 }
 
 #work {
-  text-align: center;
+  text-align: left;
   display: inline-block;
   width: 100%;
 }
 
-#intro {
+#about {
   text-align: center;
   display: inline-block;
   width: 100%;
 }
 
 #story {
-  text-align: center;
+  text-align: left;
+  display: inline-block;
+  width: 100%;
+}
+
+#skillset {
+  text-align: left;
   display: inline-block;
   width: 100%;
 }
@@ -227,7 +243,6 @@ ul {
   margin: 16px 0
 }
 
-
 #mail {
   margin: 16px 0
 }
@@ -237,6 +252,63 @@ ul {
   display: inline-block;
   width: 100%;
 }
+
+@keyframes color-change-1 {
+  from {fill: #edc655;}
+  to {fill: #f76414;}
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change-1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.cube {
+  animation-duration: 4s;
+  animation-name: color-change-1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes color-change-2 {
+  from {fill: #e0e0fc;}
+  to {fill: #B5CE6F;}
+}
+
+.background {
+  animation-duration: 4s;
+  animation-name: color-change-2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+
 
 
 /* ==============================
@@ -252,14 +324,89 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-    display: inline-block;
+    padding-bottom: 20px
   }
+
+/* add padding and change max width to have it on the same level as the nav elements */
+  .logo {
+    max-width: 300px;
+    padding: 20px 15px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px
+  }
+
+  #about-page h3 {margin-top: 0;
+  }
+
 }
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+
+  body{
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    }
+
+  .col-lg-7 {
+    width: 58.33%;
+    }
+
+  .col-lg-5 {
+    width: 41.66%;
+    }
+
+    [class*="col-"] {
+      float: left;
+      padding: 10px
+    }
+
+
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+  .flex-container {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+    .flex-skill {
+      display: flex;
+      flex-direction:column;
+      justify-content: flex-start;
+    }
+
+    #button-cv {
+      text-align: left;
+    }
+
+    #tools {
+    width: 100%;
+    }
+
+    #skill {
+    width: 100%;
+    }
+
+    #story h2 {text-align: left}
+    #skillset h2 {text-align: left}
+
 }
+
+
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */

@@ -9,47 +9,49 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
   </head>
 
-  <body>
-
+  <body id="about-page">
+    <!-- Header with navigation bar -->
     <header>
       <div class="container">
-      <img src="img/logo/logo@2x.png" alt="Logo Phuong Nguyen" class="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html"target="_self">About</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+        <img src="img/logo/logo@2x.png" alt="Logo Phuong Nguyen" class="logo">
+        <nav>
+          <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html"target="_self">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-<main>
-  <div class="container" id="intro"><!-- page heading that holds container with text -->
-    <div><!-- container for text -->
+  <!-- Main with about -->
+  <main>
+    <div id="about" class="container"><!-- page heading that holds container with text -->
+
       <h2>About me</h2>
-    </div> <!-- container for image -->
-    <div>
-      <picture style="max-width:100%">
-        <source srcset="img/profile/profile@1x.jpg" media="(max-width:767px)">
-        <img src="img/profile/profile@2x.jpg" alt="profile picture" style="max-width:100%" class="image">
-      </picture>
-  </div>
+      <div>
+        <picture style="max-width:100%">
+          <source srcset="img/profile/profile@1x.jpg" media="(max-width:767px)">
+          <img src="img/profile/profile@2x.jpg" alt="profile picture" style="max-width:100%" class="image">
+        </picture>
+      </div>
 
-
-      <div id="story"><!-- open row that holds (2) columns for project -->
-        <div> <!-- open first column -->
-          <h2>My Story</h2>
-          <p>Hi, I’m Phuong - a UX designer with mixed cultural background and multidisciplinary professional experiences. Driven by a strong passion for human focussed matters I take pleasure in simplifying complex design problems and creating meaningful solutions that create a positive impact on society.</p>
-          <p>After studying marketing at the Berlin School of Economics, I worked for an exhibition agency where I got specialized in culture marketing. By the time I took over tasks related to the agency website, which sparked my curiosity for digital media.</p>
-          <p>Following my interest, I attended a two-month training in online marketing and started my journey into the tech industry as a tech consultant and account manager for SaaS companies.</p>
-          <p>During this time, I gained not only a profound knowledge of digital technologies but also observed many challenges that customers were facing the complexity of new technologies. I then knew that I wanted to focus on user experience design and took part successfully in the project-based UX design training program with CareerFoundry.</p>
+    <div id="details" class="flex-container" >
+      <div id="story">
+        <h2 class="center">My Story</h2>
+        <p>Hi, I’m Phuong - a UX designer with mixed cultural background and multidisciplinary professional experiences. Driven by a strong passion for human focussed matters I take pleasure in simplifying complex design problems and creating meaningful solutions that create a positive impact on society.</p>
+        <p>After studying marketing at the Berlin School of Economics, I worked for an exhibition agency where I got specialized in culture marketing. By the time I took over tasks related to the agency website, which sparked my curiosity for digital media.</p>
+        <p>Following my interest, I attended a two-month training in online marketing and started my journey into the tech industry as a tech consultant and account manager for SaaS companies.</p>
+        <p>During this time, I gained not only a profound knowledge of digital technologies but also observed many challenges that customers were facing the complexity of new technologies. I then knew that I wanted to focus on user experience design and took part successfully in the project-based UX design training program with CareerFoundry.</p>
+        <div id="button-cv" class="center">
           <a href="files/cv.pdf" class="button">Download my resume</a>
-        </div><!-- ends first column -->
+        </div>
+      </div>
 
-        <div><!-- open second column -->
-          <h2>Skills & Tools</h2>
-          <div> <!-- open first container -->
+      <div id="skillset"> <!-- row with columns -->
+        <h2 class="center">Skills & Tools</h2>
+        <div class="flex-skill">
+          <div id="skill" class="col-md-6"> <!-- 1st column -->
             <h3>Relevant Skills</h3>
             <ul>
               <li>UX Research</li>
@@ -57,22 +59,23 @@
               <li>Visual Design</li>
               <li>Usability Testing</li>
             </ul>
-          </div>
+          </div> <!-- end 1st column -->
 
-          <div> <!-- open second container -->
+          <div id="tools" class="col-md-6"> <!-- 2nd column -->
             <h3>Tools I use</h3>
             <ul>
               <li>Paper and Pencil</li>
               <li>Balsamiq, Sketch, InVision</li>
               <li>Lucid Chart, UsabilityHub, Optimal Workshop</li>
             </ul>
+          </div> <!-- end 2nd column -->
+        </div>
 
-          </div>
-        </div><!-- ends second column -->
+      </div><!-- end skillset with columns -->
+    </div><!-- end details -->
+  </div> <!-- end about -->
 
-      </div><!-- end row that holds (2) columns for project -->
-    </div>
-</main>
+  </main> <!-- end main-->
 
 
 <!--footer with contact information-->

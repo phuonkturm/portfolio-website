@@ -1,1 +1,7 @@
-console.log('This is my first js script')
+(function ($) {
+$('#hamburgerMenu').click (function (event) {
+  event.preventDefault();
+$('#menu').toggleClass('menu-visible');
+});
+
+})($);

@@ -1,11 +1,12 @@
 header {
   background-color: #cbf3f0; /*Light grayish cyan */
   text-align: unset;
-  padding: 10px 0;  /* Adds a 10px inner spacing to all sides */
+  padding: 10px 0 4px;  /* Adds a 10px inner spacing to all sides */
   margin: 0px;
   position: fixed;
   box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
   width: 100%;
+
 }
 
 * {
@@ -160,16 +161,19 @@ font-family: 'Montserrat', sans-serif;
   max-width: 250px;
 }
 
-nav {display: inline-block; width:auto; float: right;
+
+nav {
+  display: flex; float: right;
+}
+
+.hamburger-menu-icon {
+  display: none;
 }
 
 nav > ul {
   list-style-type: none;
   padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -309,6 +313,31 @@ ul {
 }
 
 
+/* ==============================
+Small devices (smaller than 640px)
+================================= */
+
+@media only screen and (max-width: 639px) {
+  .hamburger-menu-icon {
+    display: block;
+  }
+  nav > ul {
+    display: none;
+  }
+
+.menu-visible {
+  display: block;
+}
+
+.logo {
+  max-width: 200px;
+}
+
+main {
+  padding-top: 46px;
+}
+
+}
 
 
 /* ==============================
@@ -343,6 +372,13 @@ Medium devices (640px and larger)
   }
 
   #about-page h3 {margin-top: 0;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+  nav > ul > li {
+    display: inline-block;
   }
 
 }

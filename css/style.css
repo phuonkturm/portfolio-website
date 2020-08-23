@@ -1,12 +1,11 @@
 header {
-  background-color: #cbf3f0; /*Light grayish cyan */
+  background-color: #cbf3f0; /*   Light grayish cyan */
   text-align: unset;
-  padding: 10px 0 4px;  /* Adds a 10px inner spacing to all sides */
-  margin: 0px;
+  padding: 10px 0 4px; /* Adds a 10px inner spacing to all sides */
+  margin: 0;
   position: fixed;
-  box-shadow: 1px 1px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 1px 1px 5px 0 rgba(50, 50, 50, 0.75);
   width: 100%;
-
 }
 
 * {
@@ -16,16 +15,19 @@ header {
 body {
   background-color: white;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
+  font-size: 16px;  /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
   color: #011627;
-
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.4;
 }
+
 h1 {
   font-size: 2.5em;
   font-weight: 700;
@@ -34,13 +36,13 @@ h1 {
 }
 
 h2 {
-  font-size: 2.00em;
+  font-size: 2em;
   font-weight: 700;
-  color: #2EC4B6;
+  color: #2ec4b6;
 }
 
 h3 {
-  font-size: 1.50em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -50,60 +52,79 @@ h4 {
 }
 
 /* Hyperlinks and hover state */
-
 a {
-  color: #E71D36; /* red */
-  text-decoration: none; /* No underlining */
-
+  color: #011627; /* red e71d36 */
+  text-decoration: none;  /* No underlining */
 }
 
+a,
 a:visited {
-  color:#800080 ; /* purple */
+  color: #434343;/* 7c007c purple */
 }
 
-a:hover, a:focus {
-  color: #FFA500; /* orange */
-  text-decoration: underline; /* Underlining when hovering over a link */
-
-}
-
+a,
 a:active {
-  color: #E71D36; /* red */
+  color: #011627;/* e71d36 red */
+}
+
+a,
+a:hover,
+a:focus {
+  color: #434343; /* ffa500 orange */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+.menu {
+  color: #e71d36; /* 011627 */
+}
+
+.menu:visited {
+  color: #434343; /*  grey black */
+}
+
+.menu:hover,
+.menu:focus {
+  color: #7c007c; /* purple */
+  text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 /* Button and hover state */
+
 .button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #2EC4B6;
-  color: #ffffff; /* needed to override the default link color */
+  display: inline-block;
+  background-color: #2ec4b6;
+  color: #434343; /* needed to override the default link color */
   text-transform: uppercase;
+  font: inherit;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #18655E; /* width of the border, type, color */
+  border-bottom: 2px solid #18655e; /* width of the border, type, color */
   transition: 0.4s opacity, 0.5s background-color, 0.4s font-size;
-  }
+  size: inherit;
+}
 
 .button:hover {
-  opacity: 0.6; /* Reduces the opacity of the button to 80% */
+  opacity: 0.6;  /* Reduces the opacity of the button to 60% */
   color: #ffffff;
   text-decoration: none;
 }
 
 .button:active {
   opacity: 0.9; /* Reduces the opacity of the button to 80% */
+  padding: 10px;
   text-decoration: none;
 }
 
-.button.contact{
+.button.contact {
   background-color: transparent;
-  color: #2EC4B6;
+  color: #2ec4b6;
   text-transform: uppercase;
-  border: 2px solid #2EC4B6;
+  border: 2px solid #2ec4b6;
 }
 
-.button.contact:hover{
-  background-color: #2EC4B6;
+.button.contact:hover {
+  background-color: #2ec4b6;
   color: #ffffff;
 }
 
@@ -112,8 +133,17 @@ a:active {
   text-decoration: none;
 }
 
-.image { width: 400px; }
-.image.big { width: 800px; }
+.image {
+  width: 400px;
+}
+
+.image.big {
+  width: 800px;
+}
+
+.image.small {
+  width: 300px;
+}
 
 /*
 Colors used:
@@ -129,11 +159,16 @@ font-family: 'Montserrat', sans-serif;
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap" rel="stylesheet">
  */
 
-
 /* Layout styling */
-
 .container {
   padding: 0 15px; /*Adds 0px to top & bottom and 15px to left and right */
+}
+
+.container.project {
+  padding: 0 15px; /*Adds 0px to top & bottom and 15px to left and right */
+  text-align: center;
+  display: inline-block;
+  width: 100%;
 }
 
 .row {
@@ -146,8 +181,10 @@ font-family: 'Montserrat', sans-serif;
   display: table;
 }
 
-#work .row {padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #4a4a4a;
+}
 
 .center {
   text-align: center;
@@ -161,9 +198,9 @@ font-family: 'Montserrat', sans-serif;
   max-width: 250px;
 }
 
-
 nav {
-  display: flex; float: right;
+  display: flex;
+  float: right;
 }
 
 .hamburger-menu-icon {
@@ -180,22 +217,22 @@ nav > ul > li > a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #E71D36; /* red */
+  color: #e71d36;/* red */
 }
 
 nav > ul > li > a:visited {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #800080; /* purple */
+  color: #800080;/* purple */
 }
 
-
-nav > ul > li > a:hover, a:focus {
+nav > ul > li > a:hover,
+a:focus {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #FFA500; /* orange */
+  color: #ffa500; /* orange */
 }
 
 #hero {
@@ -244,11 +281,11 @@ ul {
 }
 
 #social {
-  margin: 16px 0
+  margin: 16px 0;
 }
 
 #mail {
-  margin: 16px 0
+  margin: 16px 0;
 }
 
 #project {
@@ -257,9 +294,19 @@ ul {
   width: 100%;
 }
 
+#Icons {
+  width: 80%;
+}
+
+/* Animation Example project 1 */
 @keyframes color-change-1 {
-  from {fill: #edc655;}
-  to {fill: #f76414;}
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
 }
 
 .sun {
@@ -270,29 +317,14 @@ ul {
   animation-timing-function: linear;
 }
 
-.cube {
-  animation-duration: 4s;
-  animation-name: color-change-1;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-
-@keyframes color-change-2 {
-  from {fill: #e0e0fc;}
-  to {fill: #B5CE6F;}
-}
-
-.background {
-  animation-duration: 4s;
-  animation-name: color-change-2;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
 @keyframes cloud-move {
-  from {transform: translate(0,50px);}
-  to {transform: translate(200px,50px);}
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
 }
 
 .cloud-front {
@@ -304,41 +336,70 @@ ul {
 }
 
 @keyframes cloud-move-reverse {
-  from {transform: translate(446px,48px);}
-  to {transform: translate(100px, 48px);}
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
 }
 
 .cloud-back {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* Animation Example project 2 */
+@keyframes color-change-2 {
+  from {
+    fill: #6c53a2;
+  }
+
+  to {
+    fill: #b5ce6f;
+  }
+}
+
+.cube {
+  animation-duration: 4s;
+  animation-name: color-change-1;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+.background {
+  animation-duration: 4s;
+  animation-name: color-change-2;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 
 /* ==============================
 Small devices (smaller than 640px)
 ================================= */
-
 @media only screen and (max-width: 639px) {
   .hamburger-menu-icon {
     display: block;
   }
+
   nav > ul {
     display: none;
   }
 
-.menu-visible {
-  display: block;
-}
+  .menu-visible {
+    display: block;
+  }
 
-.logo {
-  max-width: 200px;
-}
+  .logo {
+    max-width: 200px;
+  }
 
-main {
-  padding-top: 46px;
+  main {
+    padding-top: 46px;
+  }
 }
-
-}
-
 
 /* ==============================
 Medium devices (640px and larger)
@@ -353,10 +414,10 @@ Medium devices (640px and larger)
     width: auto;
     float: right;
     margin-top: 4px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
   }
 
-/* add padding and change max width to have it on the same level as the nav elements */
+  /* add padding and change max width to have it on the same level as the nav elements */
   .logo {
     max-width: 300px;
     padding: 20px 15px;
@@ -368,89 +429,93 @@ Medium devices (640px and larger)
 
   [class*="col-"] {
     float: left;
-    padding: 10px
+    padding: 10px;
   }
 
-  #about-page h3 {margin-top: 0;
+  #about-page h3 {
+    margin-top: 0;
   }
 
   nav > ul {
     margin: 1em 0;
   }
+
   nav > ul > li {
     display: inline-block;
   }
-
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-
-  body{
+  body {
     font-size: 18px; /* Sets the font size to 16px */
     font-weight: 300; /* Sets the font weight to 300 */
-    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    }
+    line-height: 1.6;/* Sets the line-height to 1.6 * the font-size */
+  }
 
   .col-lg-7 {
     width: 58.33%;
-    }
+  }
 
   .col-lg-5 {
     width: 41.66%;
-    }
+  }
 
-    [class*="col-"] {
-      float: left;
-      padding: 10px
-    }
-
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
   .container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    }
+  }
 
   .flex-container {
     display: flex;
     justify-content: flex-start;
   }
 
-    .flex-skill {
-      display: flex;
-      flex-direction:column;
-      justify-content: flex-start;
-    }
+  .flex-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 
-    #button-cv {
-      text-align: left;
-    }
+  #button-cv {
+    text-align: left;
+  }
 
-    #tools {
+  #tools {
     width: 100%;
-    }
+  }
 
-    #skill {
+  #skill {
     width: 100%;
-    }
+  }
 
-    #story h2 {text-align: left}
-    #skillset h2 {text-align: left}
+  #story h2 {
+    text-align: left;
+  }
 
+  #skillset h2 {
+    text-align: left;
+  }
 }
-
 
 /* ==============================
 X-large devices (1440px or larger)
-================================= */
+=================================
 @media only screen and (min-width: 1440px) {
 }
+*/
 
 /* ==============================
 Extra-large devices (1920px or larger)
-================================= */
+=================================
 @media only screen and (min-width: 1920px) {
 }
+*/

@@ -74,18 +74,18 @@ a:focus {
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-.menu {
+.list {
   color: #e71d36; /* 011627 */
 }
 
-.menu:visited {
+.list:visited {
   color: #434343; /*  grey black */
 }
 
-.menu:hover,
-.menu:focus {
+.list:hover,
+.list:focus {
   color: #7c007c; /* purple */
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
 /* Button and hover state */

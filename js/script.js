@@ -4,3 +4,4 @@
     $('#menu').toggleClass('menu-visible')
   })
 })($)
+ 

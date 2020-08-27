@@ -161,7 +161,7 @@ font-family: 'Montserrat', sans-serif;
 
 /* Layout styling */
 .container {
-  padding: 0 15px; /*Adds 0px to top & bottom and 15px to left and right */
+  padding: 0 20px; /*Adds 0px to top & bottom and 15px to left and right */
 }
 
 .container.project {
@@ -266,12 +266,14 @@ ul {
   text-align: left;
   display: inline-block;
   width: 100%;
+  padding: 0 20px; /*Adds 0px to top & bottom and 15px to left and right */
 }
 
 #skillset {
   text-align: left;
   display: inline-block;
   width: 100%;
+  padding: 0 20px; /*Adds 0px to top & bottom and 15px to left and right */
 }
 
 #contact {
@@ -399,6 +401,10 @@ Small devices (smaller than 640px)
   main {
     padding-top: 46px;
   }
+
+  .image {
+    width: 250px;
+  }
 }
 
 /* ==============================
@@ -486,7 +492,7 @@ Large devices (1024px or larger)
   }
 
   #button-cv {
-    text-align: left;
+    text-align: center;
   }
 
   #tools {
